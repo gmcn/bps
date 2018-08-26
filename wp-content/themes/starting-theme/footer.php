@@ -14,13 +14,43 @@
 	</div><!-- #content -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'starting-theme' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'starting-theme' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'starting-theme' ), 'starting-theme', '<a href="https://automattic.com/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<a name="contact"></a>
+
+	<footer>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3 address wow fadeInLeft">
+					<h5>Address</h5>
+
+					<p>
+						Belfast Power Station
+					</p>
+
+					<p>
+						Evermore Energy,<br />
+						Forsyth House, Cromac Square<br />
+						Belfast, BT2 8LA
+					</p>
+
+				</div>
+				<div class="col-md-3 email wow fadeInLeft">
+					<h5>Email & Media</h5>
+
+					For media enquiries contact:<br  />
+					<a href="mailto:info@evermoreenergy.com">info@evermoreenergy.com</a>
+
+					For employment enquiries contact:<br  />
+					<a href="mailto:careers@evermoreenergy.com">careers@evermoreenergy.com</a>
+				</div>
+				<div class="col-md-2 col-md-offset-4 branding wow fadeInRight">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/crescentcapital_logo.svg" alt="Crescent Capital" />
+					<img src="<?php echo get_template_directory_uri(); ?>/images/evermore-energy_logo.svg" alt="Evermore Energy" />
+				</div>
+			</div>
+		</div>
+
+	</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

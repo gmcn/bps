@@ -15,9 +15,6 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<script type="text/javascript">
-	$('ul li.menu-item-has-children:has(ul ul)').addClass('your class');
-</script>
 <?php wp_head(); ?>
 </head>
 
@@ -25,22 +22,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'starting-theme' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
+	<header class="wow fadeInDown">
 
 		<!-- Static navbar -->
 	      <nav class="navbar navbar-default">
@@ -61,11 +43,6 @@
 								'menu_class' => 'navbar-collapse',
 								'items_wrap' => '<ul id="" class="nav navbar-nav navbar-right">%3$s</ul>' ) );
 								?>
-	            <ul class="nav navbar-nav navbar-right">
-	              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-	              <li><a href="../navbar-static-top/">Static top</a></li>
-	              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-	            </ul>
 	        </div><!--/.container-fluid -->
 	      </nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

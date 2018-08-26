@@ -1,0 +1,13 @@
+header {
+  position: fixed;
+  width: calc(100% - 50px);
+  z-index: 1;
+  .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase
+  }
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #7898D3;
+  }
+}

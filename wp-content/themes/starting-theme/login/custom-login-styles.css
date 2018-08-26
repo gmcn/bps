@@ -3,7 +3,7 @@
 }
 
 .login h1 a {
-	background-image: url('../images/logo.jpg') !important;
+	background-image: url('../images/logo.svg') !important;
     width: auto;
     background-size: contain;
     height: 45px;
