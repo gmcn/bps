@@ -18,6 +18,10 @@ get_header(); ?>
 include(locate_template("inc/page-front/intro.php"));
 include(locate_template("inc/page-front/about.php"));
 include(locate_template("inc/page-front/keyfacts.php"));
+include(locate_template("inc/page-front/env-standards.php"));
+include(locate_template("inc/page-front/strategic-location.php"));
+include(locate_template("inc/page-front/professional-team.php"));
+include(locate_template("inc/page-front/brochure.php"));
 ?>
 
 <?php
