@@ -12,7 +12,7 @@
   <div class="row wow fadeIn">
     <div class="col-md-12 brochurewrapper">
       <h6><?php echo $brochureHeading; ?></h6>
-      <p>Click <a href="<?php echo $brochureLink ?>">HERE</a> to download the brochure as a pdf.</p>
+      <p>Click <a href="<?php echo $brochureLink ?>" target="_blank">HERE</a> to download the brochure as a pdf.</p>
       <img src="<?php echo $brochureCoverImg; ?>" alt="<?php echo $brochureHeading; ?>">
     </div>
   </div>
