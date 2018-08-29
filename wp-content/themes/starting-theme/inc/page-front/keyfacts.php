@@ -8,9 +8,7 @@
  ?>
 
 <a name="keyfacts"></a>
-<div class="keyfacts container-fluid">
-
-    <div class="vert-align">
+<div class="container-fluid keyfacts">
 
       <div class="row">
         <div class="col-xs-12 col-md-10 col-md-offset-1">
@@ -47,7 +45,6 @@
 
         </div>
     </div>
-  </div>
 </div>
 
 <div class="factimg" style="background-image: url(<?php echo $keyFactsImg ?>)">

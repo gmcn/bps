@@ -8,17 +8,15 @@
 
 
 <div class="container strategic_location">
-  <div class="vert-align wow fadeIn">
-    <div class="row">
+  <div class="row">
 
-      <div class="col-md-5">
-        <img src="<?php echo $strategicImg ?>" alt="<?php echo $strategicHeading ?>">
-      </div>
+    <div class="col-md-5 wow fadeInLeft">
+      <img src="<?php echo $strategicImg ?>" alt="<?php echo $strategicHeading ?>">
+    </div>
 
-      <div class="col-md-7">
-        <h5><?php echo $strategicHeading ?></h5>
-        <?php echo $strategicCopy ?>
-      </div>
+    <div class="col-md-7 wow fadeInRight">
+      <h5><?php echo $strategicHeading ?></h5>
+      <?php echo $strategicCopy ?>
     </div>
   </div>
 </div>

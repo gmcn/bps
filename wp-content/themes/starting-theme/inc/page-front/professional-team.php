@@ -7,7 +7,7 @@
 <a name="professionalteam"></a>
 <div class="container-fluid professional-team">
   <div class="row">
-    <div class="vert-align wow fadeIn">
+    <!-- <div class="vert-align wow fadeIn"> -->
       <div class="col-md-12">
         <h6><?php echo $proHeading ?></h6>
 
@@ -38,6 +38,6 @@
 
 
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 </div>

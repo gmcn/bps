@@ -9,12 +9,16 @@
 <a name="about"></a>
 <div class="about">
 
-  <div class="vert-align wow fadeIn">
+  <div class="row">
     <div class="col-md-7 col-md-offset-3">
       <h2><?php echo $aboutHeading ?></h2>
       <?php echo $aboutCopy ?>
     </div>
   </div>
+
+  <!-- <div class="vert-align wow fadeIn"> -->
+
+  <!-- </div> -->
 
 </div>
 

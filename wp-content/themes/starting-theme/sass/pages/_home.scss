@@ -3,7 +3,7 @@ margin: 0 25px 25px 25px;
 }
 
 .vert-align {
-  @include md {
+  @include sm {
     position: absolute;
     top: 50%;
     width: calc(100% - 30px);
@@ -22,7 +22,7 @@ margin: 0 25px 25px 25px;
   }
 
 .intro {
-  background: url(images/intro_bg.jpg);
+  background: url(images/intro_bg.jpg) fixed;
   background-size: cover;
   min-height: calc(100vh - 25px);
   color: #fff;
@@ -56,25 +56,23 @@ margin: 0 25px 25px 25px;
     font-size: 15px;
     text-transform: uppercase;
   }
-  button {
+  .video_button {
     position: absolute;
     bottom: 20px;
-    left: 25px;
-    @include lg {
-      width: 300px;
-      text-align: center;
-      left: 40%;
-      right: 50%;
-      font-size: 20px;
+    width: 100%;
+    text-align: center;
+    a {
+      color: #fff;
+      font-size:25px;
+      text-transform: uppercase;
+      padding: 20px 25px;
     }
-
-    color: #fff;
-    font-size:15px;
-    text-transform: uppercase;
-    z-index: 999;
-    background: none;
-    border: none;
+    a:hover {
+      text-decoration: none;
+      background: #024884;
+    }
   }
+
   button:hover, button:active, button:focus, button:visited {
     background: none;
     border: none;
@@ -82,7 +80,13 @@ margin: 0 25px 25px 25px;
 }
 
 .about {
-  min-height: 100vh;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  @include lg {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  // min-height: 100vh;
   position: relative;
   color: #CECECE;
   h2 {
@@ -112,7 +116,13 @@ margin: 0 25px 25px 25px;
 }
 
 .keyfacts {
-  min-height: 100vh;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  @include lg {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  // min-height: 100vh;
   position: relative;
   color: #CECECE;
   text-align: center;
@@ -127,8 +137,13 @@ margin: 0 25px 25px 25px;
 
     width: 100%;
     padding: 20px 20px;
+    @include sm {
+      width: 33.3%;
+      padding: 100px 20px;
+      border-right: 1px dotted #CECECE;
+    }
     @include md {
-      width: 50%;
+      width: 33.3%;
       padding: 100px 20px;
       border-right: 1px dotted #CECECE;
     }
@@ -144,7 +159,11 @@ margin: 0 25px 25px 25px;
     &:last-of-type {
       border-right: none;
       width: 100%;
-      @include md {
+      @include sm {
+        width: 33.3%;
+        padding: 100px 20px;
+      }
+      @include lg {
         width: 20%;
         padding: 100px 20px;
       }
@@ -218,7 +237,13 @@ margin: 0 25px 25px 25px;
 }
 
 .env-standards {
-  min-height: 100vh;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  @include lg {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  // min-height: 100vh;
   color: #CECECE;
   position: relative;
   h4 {
@@ -248,11 +273,12 @@ margin: 0 25px 25px 25px;
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 16px;
+    padding: 0;
   }
   ul li {
     float: left;
     width: 100%;
-    @include md {
+    @include sm {
       width: 50%;
     }
     @include lg {
@@ -265,8 +291,14 @@ margin: 0 25px 25px 25px;
 }
 
 .strategic_location {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    @include lg {
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
+    // min-height: 100vh;
   position: relative;
-  min-height: 100vh;
   color: #CECECE;
   h5 {
     @include lg {
@@ -293,15 +325,23 @@ margin: 0 25px 25px 25px;
 }
 
 .professional-team {
+  padding-top: 125px;
+  padding-bottom: 125px;
+  @include lg {
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+  // min-height: 100vh;
   position: relative;
-  min-height: 100vh;
   color: #CECECE;
   background: #024884;
   h6 {
     @include lg {
       font-size: 48px;
+      margin-bottom: 75px;
     }
     font-size: 30px;
+    margin-bottom: 50px;
     color: #fff;
     text-align: center;
     span {
@@ -333,16 +373,18 @@ margin: 0 25px 25px 25px;
 }
 
 .brochure {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    @include lg {
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
+    // min-height: 100vh;
   position: relative;
-  @include lg {
-
-  }
-  min-height: 100vh;
   text-align: center;
   h6 {
     @include lg {
       font-size: 48px;
-      text-align: left;
     }
     font-size: 30px;
     color: #024884;
