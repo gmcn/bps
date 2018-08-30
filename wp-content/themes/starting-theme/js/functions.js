@@ -1,5 +1,21 @@
 ( function($) {
 
+  var $nav = $('#navigation');
+    var $win = $(window);
+    var winH = $win.height();   // Get the window height.
+
+    $win.on("scroll", function () {
+        if ($(this).scrollTop() > winH ) {
+            $nav.addClass("scroll");
+        } else {
+            $nav.removeClass("scroll");
+        }
+    }).on("resize", function(){ // If the user resizes the window
+       winH = $(this).height(); // you'll need the new height value
+    });
+
+
+
   // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -46,6 +62,7 @@ $(".modal").on('hidden.bs.modal', function (e) {
    */
   function startMatchHeight() {
     $('.fact').matchHeight();
+    $('.footermatch').matchHeight();
   }
   window.onload = startMatchHeight;
 

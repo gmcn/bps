@@ -20,7 +20,7 @@
 
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-3 address wow fadeInLeft">
+				<div class="col-md-3 footermatch address wow fadeInLeft">
 					<h5>Address</h5>
 
 					<p>
@@ -34,7 +34,7 @@
 					</p>
 
 				</div>
-				<div class="col-md-3 email wow fadeInLeft">
+				<div class="col-md-3 footermatch email wow fadeInLeft">
 					<h5>Email & Media</h5>
 
 					For media enquiries contact:<br  />
@@ -43,7 +43,7 @@
 					For employment enquiries contact:<br  />
 					<a href="mailto:careers@evermoreenergy.com">careers@evermoreenergy.com</a>
 				</div>
-				<div class="col-md-2 col-md-offset-4 branding wow fadeInRight">
+				<div class="col-md-2 footermatch col-md-offset-4 branding wow fadeInRight">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/crescentcapital_logo.svg" alt="Crescent Capital" />
 					<img src="<?php echo get_template_directory_uri(); ?>/images/evermore-energy_logo.svg" alt="Evermore Energy" />
 				</div>

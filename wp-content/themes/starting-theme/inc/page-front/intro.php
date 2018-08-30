@@ -7,7 +7,7 @@
  ?>
 
 <a name="introduction"></a>
-<div class="container-fluid intro">
+<div class="container-fluid intro" id="intro">
 
   <div class="vert-align wow fadeIn">
     <h1><?php echo $intro_heading ?></h1>

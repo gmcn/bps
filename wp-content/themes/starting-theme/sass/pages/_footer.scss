@@ -6,13 +6,24 @@ footer {
   font-family: $OpenSans;
   font-size: 15px;
   padding: 0 25px;
-  .col-md-3, .col-md-2 {
+  .col-md-3 {
     border-left: 1px solid #fff;
-    padding-top: 70px;
+    padding-top: 80px;
+  }
+  .branding {
+    border-left: 1px solid #fff;
+    padding-top: 110px;
+    img {
+      max-width: 300px;
+      display: block;
+    }
   }
   .address {
     p:first-of-type {
       font-weight: 700;
+    }
+    p:last-of-type {
+      margin-bottom: 0;
     }
   }
   a {
@@ -21,11 +32,17 @@ footer {
     font-weight: 700;
     margin-bottom: 15px;
   }
+  a:last-of-type {
+    margin-bottom: 5px;
+  }
   a:hover {
     color: #7898D3;
   }
   img {
     margin-bottom: 15px;
+  }
+  img:last-of-type {
+    margin-bottom: 0;
   }
   h5 {
     color: rgba(255,255,255,.40);

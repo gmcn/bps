@@ -24,7 +24,7 @@
 
         		?>
 
-        		<li class="wow <?php if ($i % 2) : ?>fadeInUp <?php else : ?> fadeInDown<?php endif; ?>">
+        		<li class="<?php echo $i; ?> wow <?php if ($i % 2) : ?>fadeInUp <?php else : ?> fadeInDown<?php endif; ?>">
               <img src="<?php echo $companyBranding; ?>" alt="<?php echo $companyName ?>">
 
 

@@ -21,6 +21,26 @@ margin: 0 25px 25px 25px;
     display: block;
   }
 
+  .scroll__branding {
+    display: none;
+  }
+
+    .scroll {
+      background: rgba(28,52,84,.5);
+      & .scroll__branding {
+        display: block;
+        color: #fff;
+        h1 {
+          font-family: $JosefinSans;
+          font-size: 30px;
+          font-weight: 700;
+          margin: 10px;
+          text-transform: uppercase;
+
+      }
+    }
+    }
+
 .intro {
   background: url(images/intro_bg.jpg) fixed;
   background-size: cover;
@@ -59,11 +79,14 @@ margin: 0 25px 25px 25px;
   .video_button {
     position: absolute;
     bottom: 20px;
-    width: 100%;
+    width: calc(100% - 30px);
     text-align: center;
     a {
       color: #fff;
-      font-size:25px;
+      font-size:18px;
+      @include md {
+        font-size: 25px;
+      }
       text-transform: uppercase;
       padding: 20px 25px;
     }
@@ -353,17 +376,31 @@ margin: 0 25px 25px 25px;
     list-style: none;
     width: 100%;
     padding: 0;
+    li:nth-child(1) {
+      width: 100%;
+      @include md {
+      width: 18%;
+      }
+    }
+    li:nth-child(4) {
+      width: 100%;
+      @include md {
+      width: 10%;
+      }
+    }
     li {
       float: left;
       display: inline;
       text-align: center;
       width: 100%;
-      padding: 20px;
+      padding: 12px;
       @include md {
-        width: calc(100% / 4);
+        // width: calc(100% / 4);
+        width: 12%;
       }
       @include lg {
-        width: calc(100% / 8);
+        // width: calc(100% / 8);
+        width: 12%;
       }
       img {
         height: 75px;
@@ -373,14 +410,14 @@ margin: 0 25px 25px 25px;
 }
 
 .brochure {
-    padding-top: 75px;
-    padding-bottom: 75px;
-    @include lg {
-      padding-top: 150px;
-      padding-bottom: 150px;
-    }
-    // min-height: 100vh;
-  position: relative;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  @include lg {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  // min-height: 100vh;
+position: relative;
   text-align: center;
   h6 {
     @include lg {
