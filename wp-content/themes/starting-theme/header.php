@@ -26,16 +26,42 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'starting-theme' ); ?></a>
 
-	<header class="navigation" id="navigation">
+	<header class="navigation">
 
-		<div class="row">
-			<div class="col-xs-6">
-				<div class="scroll__branding">
-					<h1>BELFAST POWER STATION</h1>
-				</div>
+		<div class="row intronav">
+			<div class="col-sm-6 col-md-3">
 
 			</div>
-			<div class="col-xs-6">
+			<div class="col-sm-6 col-md-9">
+				<!-- Static navbar -->
+			      <nav class="navbar navbar-default">
+			        <div class="container-fluid">
+			          <div class="navbar-header">
+			            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			              <span class="sr-only">Toggle navigation</span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			            </button>
+			          </div>
+			            <?php wp_nav_menu( array(
+										'theme_location' => 'menu-1',
+										'menu_id' => 'navbar',
+										'container_id' => 'navbar',
+										'container_class' => 'navbar-collapse collapse',
+										'menu_class' => 'navbar-collapse',
+										'items_wrap' => '<ul id="" class="nav navbar-nav navbar-right">%3$s</ul>' ) );
+										?>
+			        </div><!--/.container-fluid -->
+			      </nav><!-- #site-navigation -->
+			</div>
+		</div>
+
+		<div class="row mainnav">
+			<div class="col-xs-6 col-md-3">
+
+			</div>
+			<div class="col-xs-6 col-md-9">
 				<!-- Static navbar -->
 			      <nav class="navbar navbar-default">
 			        <div class="container-fluid">

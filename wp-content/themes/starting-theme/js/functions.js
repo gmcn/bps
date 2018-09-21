@@ -1,6 +1,6 @@
 ( function($) {
 
-  var $nav = $('#navigation');
+  var $nav = $('.intronav');
     var $win = $(window);
     var winH = $win.height();   // Get the window height.
 
@@ -13,6 +13,22 @@
     }).on("resize", function(){ // If the user resizes the window
        winH = $(this).height(); // you'll need the new height value
     });
+
+    var $title = $('.title');
+      var $win = $(window);
+      var winH = 200;   // Get the window height.
+
+      $win.on("scroll", function () {
+          if ($(this).scrollTop() > winH ) {
+              $title.addClass("main");
+              $title.removeClass("vert-align");
+          } else {
+              $title.removeClass("main");
+              $title.addClass("vert-align");
+          }
+      }).on("resize", function(){ // If the user resizes the window
+         winH = $(this).height(); // you'll need the new height value
+      });
 
 
 
@@ -63,6 +79,7 @@ $(".modal").on('hidden.bs.modal', function (e) {
   function startMatchHeight() {
     $('.fact').matchHeight();
     $('.footermatch').matchHeight();
+    $('.matchheight').matchHeight();
   }
   window.onload = startMatchHeight;
 

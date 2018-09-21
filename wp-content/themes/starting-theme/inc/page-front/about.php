@@ -7,10 +7,10 @@
  ?>
 
 <a name="about"></a>
-<div class="about">
+<div class="container-fluid about">
 
   <div class="row">
-    <div class="col-md-7 col-md-offset-3">
+    <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
       <h2><?php echo $aboutHeading ?></h2>
       <?php echo $aboutCopy ?>
     </div>

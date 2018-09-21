@@ -49,6 +49,9 @@
 
 <div class="factimg" style="background-image: url(<?php echo $keyFactsImg ?>)">
   <div class="vert-align">
-    <h4>"<?php echo $keyFactsImgTagline ?>"</h4>
+    <div class="container">
+      <h4><?php echo $keyFactsImgTagline ?></h4>
+    </div>
+
   </div>
 </div>

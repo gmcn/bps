@@ -1,7 +1,5 @@
 header {
-  position: fixed;
-  width: calc(100% - 50px);
-  z-index: 1;
+  padding: 0 15px;
   .navbar-default .navbar-nav > li > a {
     color: #fff;
     font-size: 15px;
@@ -9,5 +7,35 @@ header {
   }
   .navbar-default .navbar-nav > li > a:hover {
     color: #7898D3;
+  }
+  .collapse.in {
+    background: #004B8E;
+  }
+}
+
+.intronav {
+  position: fixed;
+  width: calc(100%);
+  @include md {
+  // width: calc(100% - 50px);
+  }
+  z-index: 3;
+}
+
+.mainnav {
+  position: fixed;
+  width: calc(100%);
+  @include md {
+  // width: calc(100% - 50px);
+  }
+  z-index: 1;
+  background: rgba(28,52,84,.9);
+  h1 {
+      font-family: $JosefinSans;
+      font-size: 30px;
+      font-weight: 700;
+      margin: 10px;
+      text-transform: uppercase;
+      color: #fff;
   }
 }

@@ -10,13 +10,16 @@
 <div class="container strategic_location">
   <div class="row">
 
-    <div class="col-md-5 wow fadeInLeft">
+    <div class="col-md-6 matchheight wow fadeInLeft">
+      <h5 class="hidden-md hidden-lg"><?php echo $strategicHeading ?></h5>
       <img src="<?php echo $strategicImg ?>" alt="<?php echo $strategicHeading ?>">
     </div>
 
-    <div class="col-md-7 wow fadeInRight">
-      <h5><?php echo $strategicHeading ?></h5>
-      <?php echo $strategicCopy ?>
+    <div class="col-md-6 matchheight wow fadeInRight">
+      <div class="vert-align">
+        <h5 class="hidden-xs hidden-sm"><?php echo $strategicHeading ?></h5>
+        <?php echo $strategicCopy ?>
+      </div>
     </div>
   </div>
 </div>

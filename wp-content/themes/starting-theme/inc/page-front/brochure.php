@@ -18,6 +18,6 @@
   </div>
 </div>
 
-<div class="brochureimg" style="background-image: url(<?php echo $afterBrochureImg ?>)">
+<div class="brochureimg" style="background: url(<?php echo $afterBrochureImg ?>)">
 
 </div>

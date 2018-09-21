@@ -21,35 +21,42 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-3 footermatch address wow fadeInLeft">
-					<h5>Address</h5>
+					<div class="wrapper">
+						<!-- <h5>Address</h5> -->
 
-					<p>
-						Belfast Power Station
-					</p>
+						<!-- <p>
+							Belfast Power Station
+						</p> -->
 
-					<p>
-						Evermore Energy,<br />
-						Forsyth House, Cromac Square<br />
-						Belfast, BT2 8LA
-					</p>
-
+						<p>
+							Evermore Energy,<br />
+							Forsyth House, Cromac Square<br />
+							Belfast, BT2 8LA
+						</p>
+					</div>
 				</div>
 				<div class="col-md-3 footermatch email wow fadeInLeft">
-					<h5>Email & Media</h5>
+					<div class="wrapper">
+						<!-- <h5>Email & Media</h5> -->
 
-					For media enquiries contact:<br  />
-					<a href="mailto:info@evermoreenergy.com">info@evermoreenergy.com</a>
+						Media contact:<br  />
+						<a href="mailto:info@evermoreenergy.com">info@evermoreenergy.com</a>
 
-					For employment enquiries contact:<br  />
-					<a href="mailto:careers@evermoreenergy.com">careers@evermoreenergy.com</a>
+						Careers contact:<br  />
+						<a href="mailto:careers@evermoreenergy.com">careers@evermoreenergy.com</a>
+					</div>
 				</div>
 				<div class="col-md-2 footermatch col-md-offset-4 branding wow fadeInRight">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/crescentcapital_logo.svg" alt="Crescent Capital" />
-					<img src="<?php echo get_template_directory_uri(); ?>/images/evermore-energy_logo.svg" alt="Evermore Energy" />
+					<div class="wrapper">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/crescentcapital_logo.svg" alt="Crescent Capital" />
+						<img src="<?php echo get_template_directory_uri(); ?>/images/evermore-energy_logo.svg" alt="Evermore Energy" />
+					</div>
 				</div>
 			</div>
 		</div>
-
+		<div class="signature">
+			Copyright <?php echo date('Y'); ?> © Evermore Energy
+		</div>
 	</footer>
 </div><!-- #page -->
 
